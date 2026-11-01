@@ -16,6 +16,13 @@ int main() {
             return 0;
         }
 
+    cout << "Enter percentage increase: ";
+    cin >> percentageIncrease;
+        if (percentageIncrease <= 0) {
+            cout <<"Percentage increase must be greater than 0." << endl;
+            return 0;
+        }
+
 
     return 0;
 }
