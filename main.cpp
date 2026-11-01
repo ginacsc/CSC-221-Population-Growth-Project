@@ -30,11 +30,13 @@ int main() {
             return 0;
         }
 
-    dailyIncrease = round(currentPopulation * (percentageIncrease / 100.00));
-
-    newPopulation = currentPopulation + dailyIncrease;
-
-
+    while (day <= numberOfDays) {;
+        dailyIncrease = round(currentPopulation * (percentageIncrease/100.00));
+        newPopulation = currentPopulation + dailyIncrease;
+        cout << "Day " << day << ": " << newPopulation << " " << endl;
+        currentPopulation = newPopulation;
+        day++;
+    }
 
     return 0;
 }
