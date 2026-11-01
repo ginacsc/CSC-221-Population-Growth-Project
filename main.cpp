@@ -18,8 +18,8 @@ int main() {
 
     cout << "Enter percentage increase: ";
     cin >> percentageIncrease;
-        if (percentageIncrease <= 0) {
-            cout <<"Percentage increase must be greater than 0." << endl;
+        if (percentageIncrease <= 0 || percentageIncrease > 100) {
+            cout <<"Percentage increase must be greater than 0 and less than or equal to 100." << endl;
             return 0;
         }
 
@@ -29,6 +29,11 @@ int main() {
             cout <<"Number of days must be greater than or equal to 1." << endl;
             return 0;
         }
+
+    dailyIncrease = round(currentPopulation * (percentageIncrease / 100.00));
+
+    newPopulation = currentPopulation + dailyIncrease;
+
 
 
     return 0;
