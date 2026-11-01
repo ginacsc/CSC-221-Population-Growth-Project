@@ -23,6 +23,13 @@ int main() {
             return 0;
         }
 
+    cout << "Enter number of days: ";
+    cin >> numberOfDays;
+        if (numberOfDays < 1) {
+            cout <<"Number of days must be greater than or equal to 1." << endl;
+            return 0;
+        }
+
 
     return 0;
 }
